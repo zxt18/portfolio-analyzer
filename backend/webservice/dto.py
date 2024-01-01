@@ -2,7 +2,7 @@ from datetime import datetime
 from pydantic import UUID4, BaseModel
 
 
-class PortfolioHolding(BaseModel) : 
+class PortfolioHoldingDTO(BaseModel) : 
     ticker : str
     quantity : float
     average_price : float
@@ -14,7 +14,7 @@ class PortfolioHolding(BaseModel) :
     max_sell : float
     pie_quantity : float
     
-class User(BaseModel):
+class UserDTO(BaseModel):
     uuid : UUID4
     first_name : str
     last_name : str
