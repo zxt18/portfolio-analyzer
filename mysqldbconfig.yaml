@@ -9,7 +9,7 @@ user:
   password: abc123
 
 listener:
-  host: localhost
+  host: "0.0.0.0"
   port: 3306
   max_connections: 100
   read_timeout_millis: 28800000
